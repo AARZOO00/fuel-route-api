@@ -23,10 +23,11 @@ def load_fuel_prices() -> dict:
     with open(csv_path, newline='') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            prices[row['state_code']] = {
-                'state': row['state'],
-                'price_per_gallon': float(row['avg_price_per_gallon']),
-            }
+            
+            prices[row.get('state_code')] = {
+            'state': row.get('state') or row.get('State') or "Unknown",
+            'price_per_gallon': float(row.get('avg_price_per_gallon', 3.5)),
+        }
     return prices
 
 

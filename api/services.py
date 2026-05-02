@@ -17,17 +17,28 @@ METERS_PER_MILE = 1609.344
 
 
 def load_fuel_prices() -> dict:
-    """Load fuel prices from CSV. Returns {state_code: price}."""
     prices = {}
     csv_path = os.path.join(os.path.dirname(__file__), 'fuel_prices.csv')
-    with open(csv_path, newline='') as f:
+
+    with open(csv_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
+            state = row.get('State', '').strip()
+            state_map = {
+                "Texas": "TX",
+                "California": "CA",
+                "New York": "NY",
+                # aur add kar sakti ho
+            }
+
+            state_code = state_map.get(state, state[:2].upper())
+
+            prices[state_code] = {
+                'state': state,
+                'price_per_gallon': float(row.get('Retail Price', 3.5)),
+            }
+
             
-            prices[row.get('state_code')] = {
-            'state': row.get('state') or row.get('State') or "Unknown",
-            'price_per_gallon': float(row.get('avg_price_per_gallon', 3.5)),
-        }
     return prices
 
 

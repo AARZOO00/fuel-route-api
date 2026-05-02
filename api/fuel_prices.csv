@@ -1,0 +1,51 @@
+state,state_code,avg_price_per_gallon
+Alabama,AL,3.25
+Alaska,AK,4.10
+Arizona,AZ,3.55
+Arkansas,AR,3.15
+California,CA,4.85
+Colorado,CO,3.45
+Connecticut,CT,3.60
+Delaware,DE,3.30
+Florida,FL,3.40
+Georgia,GA,3.20
+Hawaii,HI,4.90
+Idaho,ID,3.50
+Illinois,IL,3.70
+Indiana,IN,3.30
+Iowa,IA,3.20
+Kansas,KS,3.15
+Kentucky,KY,3.20
+Louisiana,LA,3.10
+Maine,ME,3.55
+Maryland,MD,3.45
+Massachusetts,MA,3.65
+Michigan,MI,3.45
+Minnesota,MN,3.30
+Mississippi,MS,3.10
+Missouri,MO,3.15
+Montana,MT,3.50
+Nebraska,NE,3.20
+Nevada,NV,3.80
+New Hampshire,NH,3.50
+New Jersey,NJ,3.40
+New Mexico,NM,3.35
+New York,NY,3.75
+North Carolina,NC,3.25
+North Dakota,ND,3.20
+Ohio,OH,3.30
+Oklahoma,OK,3.05
+Oregon,OR,3.80
+Pennsylvania,PA,3.55
+Rhode Island,RI,3.60
+South Carolina,SC,3.20
+South Dakota,SD,3.25
+Tennessee,TN,3.15
+Texas,TX,3.05
+Utah,UT,3.50
+Vermont,VT,3.60
+Virginia,VA,3.30
+Washington,WA,3.90
+West Virginia,WV,3.30
+Wisconsin,WI,3.25
+Wyoming,WY,3.35
